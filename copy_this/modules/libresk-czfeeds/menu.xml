@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OX>
+  <OXMENU id="NAVIGATION_ESHOPADMIN">
+    <MAINMENU id="libresk_tools">
+      <SUBMENU id="libresk_zbozi_cz_menu" cl="libresk_zbozicz" rights="malladmin" />
+      <SUBMENU id="libresk_heureka_cz_menu" cl="libresk_heurekacz" rights="malladmin" />
+      <SUBMENU id="libresk_srovnavadlo_cz_menu" cl="libresk_srovnavadlocz" rights="malladmin" />
+      <SUBMENU id="libresk_hledejceny_cz_menu" cl="libresk_hledejcenycz" rights="malladmin" />
+      <SUBMENU id="libresk_cenyzbozi_cz_menu" cl="libresk_cenyzbozicz" rights="malladmin" />
+      <SUBMENU id="libresk_srovname_cz_menu" cl="libresk_srovnamecz" rights="malladmin" />
+      <SUBMENU id="libresk_monitor_cz_menu" cl="libresk_monitorcz" rights="malladmin" />
+      <SUBMENU id="libresk_srovnanicen_cz_menu" cl="libresk_srovnanicencz" rights="malladmin" />
+      <SUBMENU id="libresk_usetrim_cz_menu" cl="libresk_usetrimcz" rights="malladmin" />
+      <SUBMENU id="libresk_najduzbozi_cz_menu" cl="libresk_najduzbozicz" rights="malladmin" />
+      <SUBMENU id="libresk_naakup_cz_menu" cl="libresk_naakupcz" rights="malladmin" />
+      <SUBMENU id="libresk_seznamzbozi_cz_menu" cl="libresk_seznamzbozicz" rights="malladmin" />
+      <SUBMENU id="libresk_zalevno_cz_menu" cl="libresk_zalevnocz" rights="malladmin" />
+      <SUBMENU id="libresk_hyperzbozi_cz_menu" cl="libresk_hyperzbozicz" rights="malladmin" />
+      <SUBMENU id="libresk_cenyzbozi_cz_menu" cl="libresk_cenyzbozicz" rights="malladmin" />
+      <SUBMENU id="libresk_jyxo_vybereme_cz_menu" cl="libresk_jyxovyberemecz" rights="malladmin" />
+      <SUBMENU id="libresk_koupis_cz_menu" cl="libresk_koupiscz" rights="malladmin" />
+      <SUBMENU id="libresk_muj_nakup_cz_menu" cl="libresk_mujnakupcz" rights="malladmin" />
+      <SUBMENU id="libresk_nejlepsiceny_cz_menu" cl="libresk_nejlepsicenycz" rights="malladmin" />
+      <SUBMENU id="libresk_cenicek_cz_menu" cl="libresk_cenicekcz" rights="malladmin" />
+    </MAINMENU>
+  </OXMENU>
+</OX>
+
+

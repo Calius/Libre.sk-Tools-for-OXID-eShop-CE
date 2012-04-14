@@ -1,0 +1,27 @@
+Google Sitemap Generator v0.2
+
+(this module is part of the Libre.sk Tools for OXID eShop Community Edition)
+
+Compatible with OXID eShop CE version: 4.5.9
+
+
+Installation:
+
+Just copy everything from copy_this directory to your shop's root directory and then delete content of tmp directory.
+
+
+Usage:
+
+OXID Admin -> Libre.sk Tools -> Google Sitemap
+
+
+Project Homepage:
+
+https://projects.oxidforge.org/projects/libresk-sitemap/
+
+
+Feedback:
+
+ds@libre.sk
+
+
