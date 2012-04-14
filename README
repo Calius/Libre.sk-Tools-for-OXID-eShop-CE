@@ -3,10 +3,22 @@ Libre.sk Tools for OXID eShop CE
 Compatible with OXID eShop Community Edition version: 4.5.9
 
 
+
 Modules:
 - Google Sitemap Generator
 - XML Feeds generator for Slovak portals
 - XML Feeds generator for Czech portals
+- Payment modules for Slovak banks
+
+
+Downloads:
+
+Downloadable versions of modules will be available on OXID eXchange.
+
+Currently available:
+
+http://www.oxid-esales.com/en/exchange/extensions/google-sitemap-generator-libresk-tools-0
+
 
 
 Installation:
@@ -14,14 +26,17 @@ Installation:
 Just copy everything from copy_this directory to your shop's root directory and then delete content of tmp directory.
 
 
+
 Usage:
 
 OXID Admin -> Libre.sk Tools
 
 
+
 Project Homepage:
 
 https://github.com/dslibre/Libre.sk-Tools-for-OXID-eShop-CE
+
 
 
 Feedback:
