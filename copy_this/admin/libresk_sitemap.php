@@ -121,6 +121,22 @@ class libresk_sitemap extends oxAdminView
 					$all = $all + $i;
 
 
+					// MANUFACTURERS
+					$i = 0;
+					echo('<p>Manufacturers: ');
+					$oManufacturers = oxNew("oxManufacturerList");
+					$oManufacturers->getList();
+					foreach ($oManufacturers as $oManufacturer) {
+						$i++;
+						$oManufacturerL = oxNew('oxManufacturer');
+						$oManufacturerL->loadInLang($idLang, $oManufacturer->oxmanufacturers__oxid->value); 
+						$loc = $oManufacturerL->getLink($idLang);
+						$this->writeToXML($output, $loc, $lastmod, '0.5');
+					}
+					echo($i.'</p>');
+					$all = $all + $i;
+
+
 					// DISTRIBUTORS
 					$i = 0;
 					echo('<p>Distributors: ');
