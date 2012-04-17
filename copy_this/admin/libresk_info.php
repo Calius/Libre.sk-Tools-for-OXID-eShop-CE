@@ -15,7 +15,7 @@
  *    You should have received a copy of the GNU General Public License
  *    along with Libre.sk Tools.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @link      https://projects.oxidforge.org/projects/libresk-sitemap/
+ * @link      https://github.com/dslibre/Libre.sk-Tools-for-OXID-eShop-CE
  * @package   commons
  * @copyright (C) Dominik Smatana <ds@libre.sk> 2012
  */
@@ -40,8 +40,7 @@ class libresk_info extends oxAdminView
 
 		echo $oSmarty->fetch("libresk_info.tpl");
 
-		echo('<p><a href="https://projects.oxidforge.org/projects/libresk-commons/">https://projects.oxidforge.org/projects/libresk-commons/</a></p>');
-		echo('<p><a href="https://projects.oxidforge.org/projects/libresk-sitemap/">https://projects.oxidforge.org/projects/libresk-sitemap/</a></p>');
+		echo('<p><a href="https://github.com/dslibre/Libre.sk-Tools-for-OXID-eShop-CE">https://github.com/dslibre/Libre.sk-Tools-for-OXID-eShop-CE</a></p>');
 		
 		oxUtils::getInstance()->showMessageAndExit( "" );
     }

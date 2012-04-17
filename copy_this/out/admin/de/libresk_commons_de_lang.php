@@ -15,7 +15,7 @@
  *    You should have received a copy of the GNU General Public License
  *    along with Libre.sk Tools.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @link      https://projects.oxidforge.org/projects/libresk-sitemap/
+ * @link      https://github.com/dslibre/Libre.sk-Tools-for-OXID-eShop-CE
  * @package   commons
  * @copyright (C) Dominik Smatana <ds@libre.sk> 2012
  */
