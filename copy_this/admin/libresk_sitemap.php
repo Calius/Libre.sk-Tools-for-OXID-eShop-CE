@@ -58,7 +58,7 @@ class libresk_sitemap extends oxAdminView
 					// this language is active
 					$idLang = $oLang->id;
 
-					$i = 0;
+					$all = 0;
 
 					$sitemap = 'feeds/sitemap-'.$oLang->abbr.'.xml';
 					$file = $myConfig->getOutDir().'../'.$sitemap;
@@ -77,11 +77,16 @@ class libresk_sitemap extends oxAdminView
 
 
 					// MAIN PAGE
+					$i = 0;
 					$i++;
 					$loc = $myConfig->getShopURL($idLang);
 					$test = $this->writeToXML($output, $loc, $lastmod, '1.0');
+					echo('<p>Main page: '.$i.'</p>');
+					$all = $all + $i;
 
 					// CMS PAGES
+					$i = 0;
+					echo('<p>CMS pages: ');
 					$oPages = oxNew("oxContentList");
 					$oPages->getList();
 					foreach ($oPages as $oPage ) {
@@ -97,9 +102,12 @@ class libresk_sitemap extends oxAdminView
 							}
 						}
 					}
-
+					echo($i.'</p>');
+					$all = $all + $i;
 
 					// CATEGORIES
+					$i = 0;
+					echo('<p>Categories: ');
 					$oCategories = oxNew("oxCategoryList");
 					$oCategories->getList();
 					foreach ($oCategories as $oCategory ) {
@@ -109,9 +117,28 @@ class libresk_sitemap extends oxAdminView
 						$loc = $oCategoryL->getLink($idLang);
 						$this->writeToXML($output, $loc, $lastmod, '0.7');
 					}
+					echo($i.'</p>');
+					$all = $all + $i;
 
+
+					// CATEGORIES
+					$i = 0;
+					echo('<p>Categories: ');
+					$oCategories = oxNew("oxCategoryList");
+					$oCategories->getList();
+					foreach ($oCategories as $oCategory ) {
+						$i++;
+						$oCategoryL = oxNew('oxCategory');
+						$oCategoryL->loadInLang($idLang, $oCategory->oxcategories__oxid->value); 
+						$loc = $oCategoryL->getLink($idLang);
+						$this->writeToXML($output, $loc, $lastmod, '0.7');
+					}
+					echo($i.'</p>');
+					$all = $all + $i;
 
 					// ARTICLES
+					$i = 0;
+					echo('<p>Articles: ');
 					$oArticles = oxNew("oxArticleList");
 					$oArticles->getList();
 					foreach ($oArticles as $oArticle ) {
@@ -119,6 +146,8 @@ class libresk_sitemap extends oxAdminView
 						$loc = $oArticle->getMainLink($idLang);
 						$this->writeToXML($output, $loc, $lastmod, '0.5');
 					}
+					echo($i.'</p>');
+					$all = $all + $i;
 
 					fwrite($output, '</urlset>');
 					fwrite($output, "\n");
@@ -126,7 +155,7 @@ class libresk_sitemap extends oxAdminView
 					$test = fclose($output);
 
 					$url = $myConfig->getShopURL($idLang).$sitemap;
-					echo('<p>Generated '.$i.' URLs</p>');
+					echo('<p>Generated '.$all.' URLs</p>');
 					echo('<p><a href="'.$url.'">'.$url.'</a></p>');
 					echo('<br>');
 				}
