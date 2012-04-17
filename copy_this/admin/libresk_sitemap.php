@@ -121,20 +121,21 @@ class libresk_sitemap extends oxAdminView
 					$all = $all + $i;
 
 
-					// CATEGORIES
+					// TAGS
 					$i = 0;
-					echo('<p>Categories: ');
-					$oCategories = oxNew("oxCategoryList");
-					$oCategories->getList();
-					foreach ($oCategories as $oCategory ) {
-						$i++;
-						$oCategoryL = oxNew('oxCategory');
-						$oCategoryL->loadInLang($idLang, $oCategory->oxcategories__oxid->value); 
-						$loc = $oCategoryL->getLink($idLang);
-						$this->writeToXML($output, $loc, $lastmod, '0.7');
+					echo('<p>Tags: ');
+					$oTags = oxNew("oxTagCloud");
+					$aTags = $oTags->getCloudArray();
+					if (is_array($aTags)) {
+						foreach ($aTags as $tag => $null ) {
+							$i++;
+							$loc = $oTags->getTagLink($tag);
+							$this->writeToXML($output, $loc, $lastmod, '0.5');
+						}
 					}
 					echo($i.'</p>');
 					$all = $all + $i;
+
 
 					// ARTICLES
 					$i = 0;
