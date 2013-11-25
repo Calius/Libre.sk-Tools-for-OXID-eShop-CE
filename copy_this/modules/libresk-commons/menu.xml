@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OX>
-  <OXMENU id="NAVIGATION_ESHOPADMIN">
-    <MAINMENU id="libresk_tools">
-      <SUBMENU id="libresk_info" cl="libresk_info" rights="malladmin" />
-    </MAINMENU>
-  </OXMENU>
-</OX>

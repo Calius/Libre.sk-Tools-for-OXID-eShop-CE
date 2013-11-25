@@ -60,7 +60,7 @@ class libresk_sitemap extends oxAdminView
 
 					$all = 0;
 
-					$sitemap = 'feeds/sitemap-'.$oLang->abbr.'.xml';
+					$sitemap = 'export/sitemap-'.$oLang->abbr.'.xml';
 					$file = $myConfig->getOutDir().'../'.$sitemap;
 					echo('<p>Creating sitemap for '.$oLang->name.' language (ID = '.$idLang.')</p>');
 
@@ -189,13 +189,13 @@ class libresk_sitemap extends oxAdminView
 
 					$url = $myConfig->getShopURL($idLang).$sitemap;
 					echo('<p>Generated '.$all.' URLs</p>');
-					echo('<p><a href="'.$url.'">'.$url.'</a></p>');
+					echo('<p><a href="'.$url.'" target="_blank">'.$url.'</a></p>');
 					echo('<br>');
 				}
 			}
 			echo('<p>DONE</p>');
 
-			echo("<p>Don't forget to submit your new sitemap(s) to ".'<a href="https://www.google.com/webmasters/tools/">Google Webmaster Tools</a>.</p>');
+			echo("<p>Don't forget to submit your new sitemap(s) to ".'<a href="https://www.google.com/webmasters/tools/" target="_blank">Google Webmaster Tools</a>.</p>');
 
             oxUtils::getInstance()->showMessageAndExit( "" );
         } else {

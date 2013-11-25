@@ -1,14 +1,11 @@
 Libre.sk Tools for OXID eShop CE
 
-Compatible with OXID eShop Community Edition version: 4.5.9
+Compatible with OXID eShop Community Edition version: 4.7 and 4.8
 
 
 
 Modules:
 - Google Sitemap Generator
-- XML Feeds generator for Slovak portals
-- XML Feeds generator for Czech portals
-- Payment modules for Slovak banks
 
 
 Downloads:
@@ -48,3 +45,7 @@ ds@libre.sk
 OXID eShop is registered trademark of OXID eSales AG.
 http://www.oxid-esales.com/
 
+
+Changelog:
+
+- 22.11.2013 eComStyle.de | Josef Andreas Puckl: Small fixes & moved all files to module-folder.
